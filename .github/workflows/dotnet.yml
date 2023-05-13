@@ -38,12 +38,7 @@ jobs:
         load: true
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
-
-    - name: Set up Docker Compose
-      uses: docker/compose-action@v1
-      with:
-        docker_compose_version: 1.25.5
-
+        
     - name: Run docker-compose
       run: |
         cd src/server
@@ -51,5 +46,4 @@ jobs:
 
     - name: Test
       run: |
-        cd src/server
-        docker-compose exec web dotnet test
+        docker-compose -f src/server/docker-compose.yml exec web dotnet test
