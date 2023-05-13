@@ -1,7 +1,11 @@
 version: '3.4'
 
 services:
-  dominosremake.web:
+  dominosremake-web:
+    image: ${DOCKER_REGISTRY-}dominosremake-web
+    build:
+      context: .
+      dockerfile: DominosRemake.Web/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80

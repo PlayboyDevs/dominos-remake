@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\server\DominosRemake.Web\DominosRemake.Web.csproj" />
+    <ProjectReference Include="..\DominosRemake.Web\DominosRemake.Web.csproj" />
   </ItemGroup>
 
 </Project>

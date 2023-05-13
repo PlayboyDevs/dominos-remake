@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosRemake.Infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosRemake.Identity", "DominosRemake.Identity\DominosRemake.Identity.csproj", "{14E245A0-1973-48A7-85AA-377A68169C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominosRemake.Tests", "..\DominosRemake.Tests\DominosRemake.Tests.csproj", "{BB6A6772-508A-4BCF-88F3-E772435F2E4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominosRemake.Tests", "DominosRemake.Tests\DominosRemake.Tests.csproj", "{80D224D2-48A3-4D9B-B799-61DFE8DF8449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{14E245A0-1973-48A7-85AA-377A68169C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14E245A0-1973-48A7-85AA-377A68169C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14E245A0-1973-48A7-85AA-377A68169C5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB6A6772-508A-4BCF-88F3-E772435F2E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB6A6772-508A-4BCF-88F3-E772435F2E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB6A6772-508A-4BCF-88F3-E772435F2E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB6A6772-508A-4BCF-88F3-E772435F2E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D224D2-48A3-4D9B-B799-61DFE8DF8449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D224D2-48A3-4D9B-B799-61DFE8DF8449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D224D2-48A3-4D9B-B799-61DFE8DF8449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D224D2-48A3-4D9B-B799-61DFE8DF8449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
