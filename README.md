@@ -1,2 +1,2 @@
-# dominosRemake
-A remake of the Dominos Pizza system
+# Dominos Remake
+A remake of the Dominos pizza delivery system
