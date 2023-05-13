@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DominosRemake.Identity\DominosRemake.Identity.csproj" />
+  </ItemGroup>
+
 </Project>

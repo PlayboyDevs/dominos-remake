@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DominosRemake.Infrastructure\DominosRemake.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
