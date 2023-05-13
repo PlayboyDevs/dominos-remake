@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DominosRemake.Web/1.0.0": {
+        "dependencies": {
+          "DominosRemake.Identity": "1.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.18.1"
+        },
+        "runtime": {
+          "DominosRemake.Web.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.18.1": {},
+      "DominosRemake.Identity/1.0.0": {
+        "dependencies": {
+          "DominosRemake.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "DominosRemake.Identity.dll": {}
+        }
+      },
+      "DominosRemake.Infrastructure/1.0.0": {
+        "runtime": {
+          "DominosRemake.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DominosRemake.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.18.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RtNQEQQ/bgaxzrsZEkPB+/DFaUgNiq8GtZz/R4lt+mKXPcEvEuawlbl0PB1s7ND9kvkUVZtMphPxE9Ma1VGiFg==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.18.1",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+    },
+    "DominosRemake.Identity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DominosRemake.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
