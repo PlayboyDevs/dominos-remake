@@ -28,7 +28,7 @@ jobs:
       run: |
         curl -sL https://raw.githubusercontent.com/railwayapp/cli/master/install.sh | sh
         
-    - name: Deploy to Railway
-      run: |
-        echo "${{ secrets.RAILWAY_TOKEN }}" | railway login
-        railway up -f src/server/docker-compose.yml
+    - name: Deploy
+      run: railway up -f src/server/docker-compose.yml
+      env:
+        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
