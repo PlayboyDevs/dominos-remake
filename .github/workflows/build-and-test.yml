@@ -23,3 +23,13 @@ jobs:
       run: dotnet build ./src/server/DominosRemake.sln --no-restore
     - name: Test
       run: dotnet test ./src/server/DominosRemake.sln --no-build --verbosity normal
+
+    - name: Install Railway
+      run: |
+        curl -sL https://raw.githubusercontent.com/railwayapp/cli/master/install.sh | sh
+        railway version
+
+    - name: Deploy to Railway
+      run: |
+        echo "${{ secrets.RAILWAY_TOKEN }}" | railway login
+        railway up -f src/server/docker-compose.yml
