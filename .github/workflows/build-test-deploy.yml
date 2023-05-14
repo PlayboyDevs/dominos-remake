@@ -31,4 +31,4 @@ jobs:
       run: railway up
       env:
         RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        RAILWAY_DOCKERFILE_PATH: src/server/DominosRemake.Web/Dockerfile
+        DOCKERFILE_PATH: src/server/DominosRemake.Web/Dockerfile
