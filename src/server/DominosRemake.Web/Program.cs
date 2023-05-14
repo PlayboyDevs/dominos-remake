@@ -1,9 +1,15 @@
-using DominosRemake.Web;
+namespace DominosRemake.Web;
 
-var builder = WebApplication.CreateBuilder(args);
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+        var app = builder.Build();
 
-app.MapGet("/", () => new GreetingService().GetGreetingMessage());
+        app.MapGet("/", () => new GreetingService().GetGreetingMessage());
 
-app.Run();
+        app.Run();
+    }
+}
