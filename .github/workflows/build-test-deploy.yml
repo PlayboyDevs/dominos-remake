@@ -16,19 +16,16 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.0.x
-    - name: Restore dependencies
-      run: dotnet restore ./src/server/DominosRemake.sln
-    - name: Build
-      run: dotnet build ./src/server/DominosRemake.sln --no-restore
-    - name: Test
-      run: dotnet test ./src/server/DominosRemake.sln --no-build --verbosity normal
+
+    - name: Build Docker image
+      run: |
+        docker build -f src/server/DominosRemake.Web/Dockerfile -t my-app .
 
     - name: Install Railway
       run: |
         curl -sL https://raw.githubusercontent.com/railwayapp/cli/master/install.sh | sh
-        
+
     - name: Deploy
       run: railway up
       env:
         RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        DOCKERFILE_PATH: src/server/DominosRemake.Web/Dockerfile

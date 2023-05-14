@@ -5,10 +5,12 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["src/server/DominosRemake.Web/DominosRemake.Web.csproj", "./"]
-RUN dotnet restore "DominosRemake.Web.csproj"
+COPY ["DominosRemake.Web/DominosRemake.Web.csproj", "DominosRemake.Web/"]
+COPY ["DominosRemake.Identity/DominosRemake.Identity.csproj", "DominosRemake.Identity/"]
+COPY ["DominosRemake.Infrastructure/DominosRemake.Infrastructure.csproj", "DominosRemake.Infrastructure/"]
+RUN dotnet restore "DominosRemake.Web/DominosRemake.Web.csproj"
 COPY . .
-WORKDIR /src/server/DominosRemake.Web
+WORKDIR "/src/DominosRemake.Web"
 RUN dotnet build "DominosRemake.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish
